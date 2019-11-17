@@ -7,19 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		89A58F552381277500F20AD5 /* MomentModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89A58F542381277500F20AD5 /* MomentModel.swift */; };
+		89A58F6523813A7C00F20AD5 /* Alamofire+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89A58F6423813A7C00F20AD5 /* Alamofire+Extension.swift */; };
 		89BE4F7B238041B900976C4B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89BE4F7A238041B900976C4B /* AppDelegate.swift */; };
 		89BE4F82238041B900976C4B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 89BE4F80238041B900976C4B /* Main.storyboard */; };
 		89BE4F84238041BA00976C4B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 89BE4F83238041BA00976C4B /* Assets.xcassets */; };
 		89BE4F87238041BA00976C4B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 89BE4F85238041BA00976C4B /* LaunchScreen.storyboard */; };
 		89FBDC0E2380F10E000859F3 /* BaseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89FBDC0D2380F10E000859F3 /* BaseModel.swift */; };
 		89FBDC142380F136000859F3 /* MomentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89FBDC122380F136000859F3 /* MomentViewController.swift */; };
-		89FBDC162380F31B000859F3 /* TweetList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89FBDC152380F31B000859F3 /* TweetList.swift */; };
 		89FBDC2E23811615000859F3 /* MomentRefreshHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89FBDC2D23811615000859F3 /* MomentRefreshHeaderView.swift */; };
 		C1417D3B0938EA3D26A9F9BB /* Pods_MomentsDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17C39F810A2F663165440BB6 /* Pods_MomentsDemo.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		17C39F810A2F663165440BB6 /* Pods_MomentsDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MomentsDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		89A58F542381277500F20AD5 /* MomentModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MomentModel.swift; sourceTree = "<group>"; };
+		89A58F6423813A7C00F20AD5 /* Alamofire+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Alamofire+Extension.swift"; sourceTree = "<group>"; };
+		89A58F6623813EDF00F20AD5 /* MomentsDemo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MomentsDemo-Bridging-Header.h"; sourceTree = "<group>"; };
 		89BE4F77238041B900976C4B /* MomentsDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MomentsDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		89BE4F7A238041B900976C4B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		89BE4F81238041B900976C4B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -28,7 +32,6 @@
 		89BE4F88238041BA00976C4B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		89FBDC0D2380F10E000859F3 /* BaseModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseModel.swift; sourceTree = "<group>"; };
 		89FBDC122380F136000859F3 /* MomentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MomentViewController.swift; sourceTree = "<group>"; };
-		89FBDC152380F31B000859F3 /* TweetList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TweetList.swift; sourceTree = "<group>"; };
 		89FBDC2D23811615000859F3 /* MomentRefreshHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MomentRefreshHeaderView.swift; sourceTree = "<group>"; };
 		ADA0362764FA7582F1D4DE5D /* Pods-MomentsDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MomentsDemo.release.xcconfig"; path = "Target Support Files/Pods-MomentsDemo/Pods-MomentsDemo.release.xcconfig"; sourceTree = "<group>"; };
 		DD307318CCD035A2062C3E91 /* Pods-MomentsDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MomentsDemo.debug.xcconfig"; path = "Target Support Files/Pods-MomentsDemo/Pods-MomentsDemo.debug.xcconfig"; sourceTree = "<group>"; };
@@ -67,6 +70,7 @@
 		89BE4F79238041B900976C4B /* MomentsDemo */ = {
 			isa = PBXGroup;
 			children = (
+				89A58F6423813A7C00F20AD5 /* Alamofire+Extension.swift */,
 				89FBDC0F2380F136000859F3 /* View */,
 				89FBDC102380F136000859F3 /* ViewController */,
 				89FBDC0C2380F10E000859F3 /* Model */,
@@ -75,6 +79,7 @@
 				89BE4F83238041BA00976C4B /* Assets.xcassets */,
 				89BE4F85238041BA00976C4B /* LaunchScreen.storyboard */,
 				89BE4F88238041BA00976C4B /* Info.plist */,
+				89A58F6623813EDF00F20AD5 /* MomentsDemo-Bridging-Header.h */,
 			);
 			path = MomentsDemo;
 			sourceTree = "<group>";
@@ -83,7 +88,7 @@
 			isa = PBXGroup;
 			children = (
 				89FBDC0D2380F10E000859F3 /* BaseModel.swift */,
-				89FBDC152380F31B000859F3 /* TweetList.swift */,
+				89A58F542381277500F20AD5 /* MomentModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -155,6 +160,7 @@
 				TargetAttributes = {
 					89BE4F76238041B900976C4B = {
 						CreatedOnToolsVersion = 11.1;
+						LastSwiftMigration = 1110;
 					};
 				};
 			};
@@ -239,8 +245,9 @@
 				89FBDC2E23811615000859F3 /* MomentRefreshHeaderView.swift in Sources */,
 				89FBDC142380F136000859F3 /* MomentViewController.swift in Sources */,
 				89BE4F7B238041B900976C4B /* AppDelegate.swift in Sources */,
+				89A58F552381277500F20AD5 /* MomentModel.swift in Sources */,
+				89A58F6523813A7C00F20AD5 /* Alamofire+Extension.swift in Sources */,
 				89FBDC0E2380F10E000859F3 /* BaseModel.swift in Sources */,
-				89FBDC162380F31B000859F3 /* TweetList.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -385,6 +392,7 @@
 			baseConfigurationReference = DD307318CCD035A2062C3E91 /* Pods-MomentsDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = DW4EHKV48E;
 				INFOPLIST_FILE = MomentsDemo/Info.plist;
@@ -395,6 +403,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.macro.MomentsDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "MomentsDemo/MomentsDemo-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -405,6 +415,7 @@
 			baseConfigurationReference = ADA0362764FA7582F1D4DE5D /* Pods-MomentsDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = DW4EHKV48E;
 				INFOPLIST_FILE = MomentsDemo/Info.plist;
@@ -415,6 +426,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.macro.MomentsDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "MomentsDemo/MomentsDemo-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

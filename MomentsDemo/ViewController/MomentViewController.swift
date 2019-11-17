@@ -8,6 +8,7 @@
 
 import UIKit
 import ESPullToRefresh
+import AlamofireImage
 
 class MomentViewController: UIViewController {
     
@@ -20,17 +21,14 @@ class MomentViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.setupSubviews();
-        
         DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) {
             self.tableView.es.autoPullToRefresh()
         }
     }
     
     private func setupSubviews(){
-        
         let header = MomentRefreshHeaderView.init(frame: CGRect.zero)
         let footer = ESRefreshFooterAnimator.init(frame: CGRect.zero)
-        
         self.tableView.es.addPullToRefresh(animator: header) { [weak self] in
             self?.refresh()
         }
@@ -39,20 +37,41 @@ class MomentViewController: UIViewController {
         }
         self.tableView.refreshIdentifier = "default"
         self.tableView.expiredTimeInterval = 20.0
-        
-        
+        //remove tableview Separator line
+        self.tableView.tableFooterView = UIView.init()
     }
-    
-    
     
     // MARK: - provate method
     private func refresh() {
-        
-        DispatchQueue.main.asyncAfter(deadline: .now() + 3.0) {
-           //模拟网络请求返回
-            self.tableView.reloadData()
-            self.tableView.es.stopPullToRefresh()
+        //load userinfo call back
+        User.loadUserInfo().compactMap { (userInfo) -> Void in
+            self.avatarImage.af_setImage(withURL: URL(string: userInfo.avatarUrl)!)
+            self.profileImage.af_setImage(withURL: URL(string: userInfo.profileImageUrl)!)
+            self.nickLabel.text = userInfo.nickName
         }
+        
+        
+        
+        
+        
+        
+    
+        
+        
+//        User.loadUserInfo().then(on: DispatchQueue.main, flags: DispatchWorkItemFlags?) { (User) -> Thenable in
+//            
+//            self.tableView.reloadData()
+//            self.tableView.es.stopPullToRefresh()
+//            
+//            
+//        }
+//        
+//        
+//        DispatchQueue.main.asyncAfter(deadline: .now() + 3.0) {
+//           //模拟网络请求返回
+//            self.tableView.reloadData()
+//            self.tableView.es.stopPullToRefresh()
+//        }
         
     }
     private func loadMore() {

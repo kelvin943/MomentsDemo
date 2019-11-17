@@ -2,6 +2,10 @@ Alamofire:
   LABEL: Alamofire
   PROJECT_PATH: "/Users/zhangquan526/Desktop/MomentsDemo/Pods/Alamofire.xcodeproj"
   UUID: 81B7E9B7CD0CADA087A4BB042FBA92E7
+AlamofireImage:
+  LABEL: AlamofireImage
+  PROJECT_PATH: "/Users/zhangquan526/Desktop/MomentsDemo/Pods/AlamofireImage.xcodeproj"
+  UUID: 7208F07B279B66BF4C4DB05795103195
 ESPullToRefresh:
   LABEL: ESPullToRefresh
   PROJECT_PATH: "/Users/zhangquan526/Desktop/MomentsDemo/Pods/ESPullToRefresh.xcodeproj"
@@ -14,6 +18,10 @@ Pods-MomentsDemo:
   LABEL: Pods-MomentsDemo
   PROJECT_PATH: "/Users/zhangquan526/Desktop/MomentsDemo/Pods/Pods.xcodeproj"
   UUID: 3C21D4FB2D096CC142060C12E2BC1D91
+PromiseKit:
+  LABEL: PromiseKit
+  PROJECT_PATH: "/Users/zhangquan526/Desktop/MomentsDemo/Pods/PromiseKit.xcodeproj"
+  UUID: 128C731E310A7738D156105948622A8D
 RxSwift:
   LABEL: RxSwift
   PROJECT_PATH: "/Users/zhangquan526/Desktop/MomentsDemo/Pods/RxSwift.xcodeproj"

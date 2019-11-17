@@ -8,6 +8,12 @@ CACHE_KEYS:
     CHECKSUM: 85e8a02c69d6020a0d734f6054870d7ecb75cf18
     SPECS:
       - Alamofire (4.9.1)
+  AlamofireImage:
+    BUILD_SETTINGS_CHECKSUM:
+      AlamofireImage: ad3420ff95abc5a6029dfe4ed45abb28
+    CHECKSUM: be9963c6582d68b39e89191f64c82a7d7bf40fdd
+    SPECS:
+      - AlamofireImage (3.6.0)
   ESPullToRefresh:
     BUILD_SETTINGS_CHECKSUM:
       ESPullToRefresh: 35033539ad8814d24a4dea7b8a1c1428
@@ -22,8 +28,17 @@ CACHE_KEYS:
       - ObjectMapper (3.5.1)
   Pods-MomentsDemo:
     BUILD_SETTINGS_CHECKSUM:
-      Debug: 01bef052cd6802cc1e461f63b77121ef
-      Release: 01bef052cd6802cc1e461f63b77121ef
+      Debug: 12e134127b4c7730a0134b8c718b2e89
+      Release: 12e134127b4c7730a0134b8c718b2e89
+  PromiseKit:
+    BUILD_SETTINGS_CHECKSUM:
+      PromiseKit: af7ccfc2ad4d81d380c03fc732c4dbf3
+    CHECKSUM: e4863d06976e7dee5e41c04fc7371c16b3600292
+    SPECS:
+      - PromiseKit (6.11.0)
+      - PromiseKit/CorePromise (6.11.0)
+      - PromiseKit/Foundation (6.11.0)
+      - PromiseKit/UIKit (6.11.0)
   RxSwift:
     BUILD_SETTINGS_CHECKSUM:
       RxSwift: 6f93ba9ad32447f1cf99440145a7ce8e
