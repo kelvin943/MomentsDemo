@@ -8,10 +8,22 @@ CACHE_KEYS:
     CHECKSUM: 85e8a02c69d6020a0d734f6054870d7ecb75cf18
     SPECS:
       - Alamofire (4.9.1)
+  ESPullToRefresh:
+    BUILD_SETTINGS_CHECKSUM:
+      ESPullToRefresh: 35033539ad8814d24a4dea7b8a1c1428
+    CHECKSUM: ce058a36454a5032519cc9d8b45da217728cf104
+    SPECS:
+      - ESPullToRefresh (2.9)
+  ObjectMapper:
+    BUILD_SETTINGS_CHECKSUM:
+      ObjectMapper: 21eea98855f08976126cfa955749b7fd
+    CHECKSUM: 70187b8941977c62ccfb423caf6b50be405cabf0
+    SPECS:
+      - ObjectMapper (3.5.1)
   Pods-MomentsDemo:
     BUILD_SETTINGS_CHECKSUM:
-      Debug: 43619b10e67481d4dd412a16309d3156
-      Release: 43619b10e67481d4dd412a16309d3156
+      Debug: 01bef052cd6802cc1e461f63b77121ef
+      Release: 01bef052cd6802cc1e461f63b77121ef
   RxSwift:
     BUILD_SETTINGS_CHECKSUM:
       RxSwift: 6f93ba9ad32447f1cf99440145a7ce8e
@@ -24,4 +36,4 @@ CACHE_KEYS:
     CHECKSUM: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
     SPECS:
       - SnapKit (5.0.1)
-OBJECT_VERSION: 50
+OBJECT_VERSION: 51

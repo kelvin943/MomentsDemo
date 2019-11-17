@@ -1,0 +1,543 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		072FB2B700412FFEEA5C585B69B02D0B /* ESPullToRefresh.swift in Sources */ = {isa = PBXBuildFile; fileRef = 690CC08E0B579BD59C44D096FB654332 /* ESPullToRefresh.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		1315BF07FA13A9627EBADB58F7201BB9 /* ESRefreshProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D34F9203C415C4831DA9429495F467B /* ESRefreshProtocol.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		155BAAAEF8AB6FC56C2EA227C528851A /* ESPullToRefresh+Manager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1A072823E5EB9CF9C8CD2A2CAF839DA /* ESPullToRefresh+Manager.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		15B810C5ADCE4568CDD73E7ECA7018C4 /* ESRefreshAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3789C6E8E154106B320932F6AF77F91 /* ESRefreshAnimator.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		182FACB3C39DF060F22DB1CAD11088F1 /* icon_pull_to_refresh_arrow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E1D53CE59EE4CD205208A9F4761AFB3A /* icon_pull_to_refresh_arrow@2x.png */; };
+		619FF8D7F97BB12280979FFBB25E63C5 /* ESPullToRefresh.bundle in Resources */ = {isa = PBXBuildFile; fileRef = A71A4CE1B8C4065FD3B4B26CE17EDD51 /* ESPullToRefresh.bundle */; };
+		7EF8FFCC9E5F4ABBDB8624A8F88E52F6 /* ESPullToRefresh-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 966AB221DF61396697696B9A43D28E8F /* ESPullToRefresh-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		81224113A2EF06900C7AB6E164EA8459 /* ESPullToRefresh-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 611DFCADB62C821A5DF658946C2FB181 /* ESPullToRefresh-dummy.m */; };
+		985099F7DF350C0A6C0DA12F575980F6 /* ES.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98B5218F0154C1D2BEABC14518B9E168 /* ES.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		A50A3887B52C8752081E20E74DAFDA5E /* ESRefreshFooterAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78A4161B12E724F29A3534026F8AC563 /* ESRefreshFooterAnimator.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		B264B9EEBA1449F749CF733C4FD84903 /* ESRefreshHeaderAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90C1EDEFFA4AE6C11B7712536C905901 /* ESRefreshHeaderAnimator.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		D24395D7498D5287F3E3852154635C26 /* ESRefreshComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72B57AA41E216158CDF5A05F7F0A2EE3 /* ESRefreshComponent.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		E8F6D1E2FD66778330AD0522EECC8672 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E3F584D9E6329DC649CD4ADB28584FA6 /* Foundation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D3F1879334C0BB3FC7579A07A1893E46 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AB2D28BE90312769AE05A87A3FFC027C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DF81E6A8639DB7F02BD0B033B840A826;
+			remoteInfo = "ESPullToRefresh-ESPullToRefresh";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		39A022B9C9B64B7DB94B59DCD9581F97 /* ResourceBundle-ESPullToRefresh-ESPullToRefresh-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-ESPullToRefresh-ESPullToRefresh-Info.plist"; sourceTree = "<group>"; };
+		3D34F9203C415C4831DA9429495F467B /* ESRefreshProtocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ESRefreshProtocol.swift; path = Sources/ESRefreshProtocol.swift; sourceTree = "<group>"; };
+		4F374FCE466B571512B4F3403144B1F4 /* ESPullToRefresh-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ESPullToRefresh-prefix.pch"; sourceTree = "<group>"; };
+		55AE0E6C323387150542C34DC207BEDF /* ESPullToRefresh.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ESPullToRefresh.xcconfig; sourceTree = "<group>"; };
+		611DFCADB62C821A5DF658946C2FB181 /* ESPullToRefresh-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ESPullToRefresh-dummy.m"; sourceTree = "<group>"; };
+		690CC08E0B579BD59C44D096FB654332 /* ESPullToRefresh.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ESPullToRefresh.swift; path = Sources/ESPullToRefresh.swift; sourceTree = "<group>"; };
+		72B57AA41E216158CDF5A05F7F0A2EE3 /* ESRefreshComponent.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ESRefreshComponent.swift; path = Sources/ESRefreshComponent.swift; sourceTree = "<group>"; };
+		78A4161B12E724F29A3534026F8AC563 /* ESRefreshFooterAnimator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ESRefreshFooterAnimator.swift; path = Sources/Animator/ESRefreshFooterAnimator.swift; sourceTree = "<group>"; };
+		90C1EDEFFA4AE6C11B7712536C905901 /* ESRefreshHeaderAnimator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ESRefreshHeaderAnimator.swift; path = Sources/Animator/ESRefreshHeaderAnimator.swift; sourceTree = "<group>"; };
+		966AB221DF61396697696B9A43D28E8F /* ESPullToRefresh-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ESPullToRefresh-umbrella.h"; sourceTree = "<group>"; };
+		98B5218F0154C1D2BEABC14518B9E168 /* ES.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ES.swift; path = Sources/ES.swift; sourceTree = "<group>"; };
+		9C9EECE017D20AC9B813DF1BC66DC218 /* ESPullToRefresh.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = ESPullToRefresh.modulemap; sourceTree = "<group>"; };
+		A71A4CE1B8C4065FD3B4B26CE17EDD51 /* ESPullToRefresh.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = ESPullToRefresh.bundle; path = "ESPullToRefresh-ESPullToRefresh.bundle"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C3789C6E8E154106B320932F6AF77F91 /* ESRefreshAnimator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ESRefreshAnimator.swift; path = Sources/ESRefreshAnimator.swift; sourceTree = "<group>"; };
+		CCDB301A29AB204E40C549B435E0D96D /* ESPullToRefresh.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = ESPullToRefresh.framework; path = ESPullToRefresh.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E1D53CE59EE4CD205208A9F4761AFB3A /* icon_pull_to_refresh_arrow@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "icon_pull_to_refresh_arrow@2x.png"; path = "Sources/Animator/icon_pull_to_refresh_arrow@2x.png"; sourceTree = "<group>"; };
+		E3F584D9E6329DC649CD4ADB28584FA6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		F1A072823E5EB9CF9C8CD2A2CAF839DA /* ESPullToRefresh+Manager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "ESPullToRefresh+Manager.swift"; path = "Sources/ESPullToRefresh+Manager.swift"; sourceTree = "<group>"; };
+		FF6C9635505787A93E42F8EA3FD4AF65 /* ESPullToRefresh-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ESPullToRefresh-Info.plist"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9C60198867BA8CF7C2832685C95DF6FE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A79680254DD03606E71242D6F67487CA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E8F6D1E2FD66778330AD0522EECC8672 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0939209FB88A9DDBE958EDA4969EB34E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A71A4CE1B8C4065FD3B4B26CE17EDD51 /* ESPullToRefresh.bundle */,
+				CCDB301A29AB204E40C549B435E0D96D /* ESPullToRefresh.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		13923AD4A399FD6FB1681013C1AB0F29 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				E1D53CE59EE4CD205208A9F4761AFB3A /* icon_pull_to_refresh_arrow@2x.png */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		419A22039943310E997A9E8154ACBBB3 /* ESPullToRefresh */ = {
+			isa = PBXGroup;
+			children = (
+				98B5218F0154C1D2BEABC14518B9E168 /* ES.swift */,
+				690CC08E0B579BD59C44D096FB654332 /* ESPullToRefresh.swift */,
+				F1A072823E5EB9CF9C8CD2A2CAF839DA /* ESPullToRefresh+Manager.swift */,
+				C3789C6E8E154106B320932F6AF77F91 /* ESRefreshAnimator.swift */,
+				72B57AA41E216158CDF5A05F7F0A2EE3 /* ESRefreshComponent.swift */,
+				78A4161B12E724F29A3534026F8AC563 /* ESRefreshFooterAnimator.swift */,
+				90C1EDEFFA4AE6C11B7712536C905901 /* ESRefreshHeaderAnimator.swift */,
+				3D34F9203C415C4831DA9429495F467B /* ESRefreshProtocol.swift */,
+				13923AD4A399FD6FB1681013C1AB0F29 /* Resources */,
+				86783DADB7FF72856B86959C6DCBC18B /* Support Files */,
+			);
+			name = ESPullToRefresh;
+			path = ESPullToRefresh;
+			sourceTree = "<group>";
+		};
+		86783DADB7FF72856B86959C6DCBC18B /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				9C9EECE017D20AC9B813DF1BC66DC218 /* ESPullToRefresh.modulemap */,
+				55AE0E6C323387150542C34DC207BEDF /* ESPullToRefresh.xcconfig */,
+				611DFCADB62C821A5DF658946C2FB181 /* ESPullToRefresh-dummy.m */,
+				FF6C9635505787A93E42F8EA3FD4AF65 /* ESPullToRefresh-Info.plist */,
+				4F374FCE466B571512B4F3403144B1F4 /* ESPullToRefresh-prefix.pch */,
+				966AB221DF61396697696B9A43D28E8F /* ESPullToRefresh-umbrella.h */,
+				39A022B9C9B64B7DB94B59DCD9581F97 /* ResourceBundle-ESPullToRefresh-ESPullToRefresh-Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/ESPullToRefresh";
+			sourceTree = "<group>";
+		};
+		BBBF77AFF47833E5ED2C5EF5C6ADFF8B /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				E3F584D9E6329DC649CD4ADB28584FA6 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		C83C847513B386DBCB7CA748A7BB13C2 = {
+			isa = PBXGroup;
+			children = (
+				419A22039943310E997A9E8154ACBBB3 /* ESPullToRefresh */,
+				E24731D71E57BA76F0E7CFB0D10600CC /* Frameworks */,
+				0939209FB88A9DDBE958EDA4969EB34E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E24731D71E57BA76F0E7CFB0D10600CC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BBBF77AFF47833E5ED2C5EF5C6ADFF8B /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		6BA993156A405A41C5C21D982E50C88F /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7EF8FFCC9E5F4ABBDB8624A8F88E52F6 /* ESPullToRefresh-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		5D435984EFD7B8B8B93B98F8B45D5F3B /* ESPullToRefresh */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A4756A0805BE954431E7233569150389 /* Build configuration list for PBXNativeTarget "ESPullToRefresh" */;
+			buildPhases = (
+				6BA993156A405A41C5C21D982E50C88F /* Headers */,
+				0A7D6EA2F4DA2F57B29F3774574A5C4B /* Sources */,
+				A79680254DD03606E71242D6F67487CA /* Frameworks */,
+				3246E358E7E117FD0A32FC48E43B3F3F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9DC86B30A10254186DBDB449C0AE0649 /* PBXTargetDependency */,
+			);
+			name = ESPullToRefresh;
+			productName = ESPullToRefresh;
+			productReference = CCDB301A29AB204E40C549B435E0D96D /* ESPullToRefresh.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		DF81E6A8639DB7F02BD0B033B840A826 /* ESPullToRefresh-ESPullToRefresh */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FC89242C48E4866330733F709B9432F6 /* Build configuration list for PBXNativeTarget "ESPullToRefresh-ESPullToRefresh" */;
+			buildPhases = (
+				6B7C31CA8BCF97FA1C963D9855EA03F4 /* Sources */,
+				9C60198867BA8CF7C2832685C95DF6FE /* Frameworks */,
+				FCAB633AFF7F65102A8CF2C9406312C5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "ESPullToRefresh-ESPullToRefresh";
+			productName = "ESPullToRefresh-ESPullToRefresh";
+			productReference = A71A4CE1B8C4065FD3B4B26CE17EDD51 /* ESPullToRefresh.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AB2D28BE90312769AE05A87A3FFC027C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+			};
+			buildConfigurationList = 01FF5ED2C570A8605B4124C62C80B512 /* Build configuration list for PBXProject "ESPullToRefresh" */;
+			compatibilityVersion = "Xcode 10.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = C83C847513B386DBCB7CA748A7BB13C2;
+			productRefGroup = 0939209FB88A9DDBE958EDA4969EB34E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5D435984EFD7B8B8B93B98F8B45D5F3B /* ESPullToRefresh */,
+				DF81E6A8639DB7F02BD0B033B840A826 /* ESPullToRefresh-ESPullToRefresh */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3246E358E7E117FD0A32FC48E43B3F3F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				619FF8D7F97BB12280979FFBB25E63C5 /* ESPullToRefresh.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FCAB633AFF7F65102A8CF2C9406312C5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				182FACB3C39DF060F22DB1CAD11088F1 /* icon_pull_to_refresh_arrow@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0A7D6EA2F4DA2F57B29F3774574A5C4B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				985099F7DF350C0A6C0DA12F575980F6 /* ES.swift in Sources */,
+				155BAAAEF8AB6FC56C2EA227C528851A /* ESPullToRefresh+Manager.swift in Sources */,
+				81224113A2EF06900C7AB6E164EA8459 /* ESPullToRefresh-dummy.m in Sources */,
+				072FB2B700412FFEEA5C585B69B02D0B /* ESPullToRefresh.swift in Sources */,
+				15B810C5ADCE4568CDD73E7ECA7018C4 /* ESRefreshAnimator.swift in Sources */,
+				D24395D7498D5287F3E3852154635C26 /* ESRefreshComponent.swift in Sources */,
+				A50A3887B52C8752081E20E74DAFDA5E /* ESRefreshFooterAnimator.swift in Sources */,
+				B264B9EEBA1449F749CF733C4FD84903 /* ESRefreshHeaderAnimator.swift in Sources */,
+				1315BF07FA13A9627EBADB58F7201BB9 /* ESRefreshProtocol.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6B7C31CA8BCF97FA1C963D9855EA03F4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9DC86B30A10254186DBDB449C0AE0649 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "ESPullToRefresh-ESPullToRefresh";
+			target = DF81E6A8639DB7F02BD0B033B840A826 /* ESPullToRefresh-ESPullToRefresh */;
+			targetProxy = D3F1879334C0BB3FC7579A07A1893E46 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		24344A054CF0220178D0AA973AC2143A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 55AE0E6C323387150542C34DC207BEDF /* ESPullToRefresh.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/ESPullToRefresh";
+				INFOPLIST_FILE = "Target Support Files/ESPullToRefresh/ResourceBundle-ESPullToRefresh-ESPullToRefresh-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				PRODUCT_NAME = ESPullToRefresh;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		6993BE509D2B5C4C82AACDBBDCCA0EEE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		6FFA20AF81F41243662BF1C6045E0DD7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 55AE0E6C323387150542C34DC207BEDF /* ESPullToRefresh.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/ESPullToRefresh";
+				INFOPLIST_FILE = "Target Support Files/ESPullToRefresh/ResourceBundle-ESPullToRefresh-ESPullToRefresh-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				PRODUCT_NAME = ESPullToRefresh;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		7BCBA367066412A44396FAEF5105C135 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		9B767471003E7ACCA8421DE2AD7B4DA3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 55AE0E6C323387150542C34DC207BEDF /* ESPullToRefresh.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/ESPullToRefresh/ESPullToRefresh-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ESPullToRefresh/ESPullToRefresh-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/ESPullToRefresh/ESPullToRefresh.modulemap";
+				PRODUCT_MODULE_NAME = ESPullToRefresh;
+				PRODUCT_NAME = ESPullToRefresh;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		F2F9EE0192A543DA31701B3B44543DCF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 55AE0E6C323387150542C34DC207BEDF /* ESPullToRefresh.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/ESPullToRefresh/ESPullToRefresh-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ESPullToRefresh/ESPullToRefresh-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/ESPullToRefresh/ESPullToRefresh.modulemap";
+				PRODUCT_MODULE_NAME = ESPullToRefresh;
+				PRODUCT_NAME = ESPullToRefresh;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		01FF5ED2C570A8605B4124C62C80B512 /* Build configuration list for PBXProject "ESPullToRefresh" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7BCBA367066412A44396FAEF5105C135 /* Debug */,
+				6993BE509D2B5C4C82AACDBBDCCA0EEE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A4756A0805BE954431E7233569150389 /* Build configuration list for PBXNativeTarget "ESPullToRefresh" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9B767471003E7ACCA8421DE2AD7B4DA3 /* Debug */,
+				F2F9EE0192A543DA31701B3B44543DCF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FC89242C48E4866330733F709B9432F6 /* Build configuration list for PBXNativeTarget "ESPullToRefresh-ESPullToRefresh" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				24344A054CF0220178D0AA973AC2143A /* Debug */,
+				6FFA20AF81F41243662BF1C6045E0DD7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AB2D28BE90312769AE05A87A3FFC027C /* Project object */;
+}

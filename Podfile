@@ -12,7 +12,9 @@ target 'MomentsDemo' do
   use_frameworks!
   pod 'Alamofire'
   pod 'SnapKit'
-  pod 'RxSwift' 
+  pod 'RxSwift'
+  pod 'ObjectMapper'
+  pod "ESPullToRefresh"
 # Pods for MomentsDemo
 
 end

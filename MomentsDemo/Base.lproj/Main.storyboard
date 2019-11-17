@@ -8,10 +8,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Moment View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MomentsDemo" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="MomentViewController" customModule="MomentsDemo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -20,21 +20,21 @@
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <view key="tableHeaderView" contentMode="scaleToFill" id="tTK-3T-DFc">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="328"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="348"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     <subviews>
-                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profile-image" translatesAutoresizingMaskIntoConstraints="NO" id="t8O-9l-LEL">
-                                            <rect key="frame" x="0.0" y="-100" width="414" height="378"/>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profile_image" translatesAutoresizingMaskIntoConstraints="NO" id="t8O-9l-LEL">
+                                            <rect key="frame" x="0.0" y="-100" width="414" height="398"/>
                                         </imageView>
                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="avatar" translatesAutoresizingMaskIntoConstraints="NO" id="Tdj-8W-KwO">
-                                            <rect key="frame" x="304" y="203" width="100" height="100"/>
+                                            <rect key="frame" x="314" y="228" width="100" height="100"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" constant="100" id="hhe-H5-8t7"/>
                                                 <constraint firstAttribute="height" constant="100" id="ruV-kn-Tiz"/>
                                             </constraints>
                                         </imageView>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Huan Huan" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="22T-LK-LcT">
-                                            <rect key="frame" x="207" y="247" width="85" height="21"/>
+                                            <rect key="frame" x="217" y="267" width="85" height="21"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <nil key="highlightedColor"/>
@@ -44,8 +44,8 @@
                                     <constraints>
                                         <constraint firstAttribute="trailing" secondItem="t8O-9l-LEL" secondAttribute="trailing" id="7vW-OG-3B0"/>
                                         <constraint firstItem="Tdj-8W-KwO" firstAttribute="leading" secondItem="22T-LK-LcT" secondAttribute="trailing" constant="12" id="BXQ-9g-zgP"/>
-                                        <constraint firstAttribute="trailing" secondItem="Tdj-8W-KwO" secondAttribute="trailing" constant="10" id="DxF-cV-OpX"/>
-                                        <constraint firstAttribute="bottom" secondItem="Tdj-8W-KwO" secondAttribute="bottom" constant="25" id="VbJ-4D-UeF"/>
+                                        <constraint firstAttribute="trailing" secondItem="Tdj-8W-KwO" secondAttribute="trailing" id="DxF-cV-OpX"/>
+                                        <constraint firstAttribute="bottom" secondItem="Tdj-8W-KwO" secondAttribute="bottom" constant="20" id="VbJ-4D-UeF"/>
                                         <constraint firstItem="t8O-9l-LEL" firstAttribute="top" secondItem="tTK-3T-DFc" secondAttribute="top" constant="-100" id="eGb-Ff-FeC"/>
                                         <constraint firstItem="22T-LK-LcT" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="tTK-3T-DFc" secondAttribute="leading" constant="20" symbolic="YES" id="igP-je-g0o"/>
                                         <constraint firstItem="t8O-9l-LEL" firstAttribute="leading" secondItem="tTK-3T-DFc" secondAttribute="leading" id="k6e-yN-kaw"/>
@@ -64,6 +64,12 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="avatarImage" destination="Tdj-8W-KwO" id="2hF-Hc-ZOL"/>
+                        <outlet property="nickLabel" destination="22T-LK-LcT" id="qDg-Al-sbd"/>
+                        <outlet property="profileImage" destination="t8O-9l-LEL" id="NHV-7K-67f"/>
+                        <outlet property="tableView" destination="zFC-uf-QXa" id="jBI-MB-bTl"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -72,6 +78,6 @@
     </scenes>
     <resources>
         <image name="avatar" width="100" height="100"/>
-        <image name="profile-image" width="2808" height="1872"/>
+        <image name="profile_image" width="2808" height="1872"/>
     </resources>
 </document>

@@ -2,6 +2,14 @@ Alamofire:
   LABEL: Alamofire
   PROJECT_PATH: "/Users/zhangquan526/Desktop/MomentsDemo/Pods/Alamofire.xcodeproj"
   UUID: 81B7E9B7CD0CADA087A4BB042FBA92E7
+ESPullToRefresh:
+  LABEL: ESPullToRefresh
+  PROJECT_PATH: "/Users/zhangquan526/Desktop/MomentsDemo/Pods/ESPullToRefresh.xcodeproj"
+  UUID: 5D435984EFD7B8B8B93B98F8B45D5F3B
+ObjectMapper:
+  LABEL: ObjectMapper
+  PROJECT_PATH: "/Users/zhangquan526/Desktop/MomentsDemo/Pods/ObjectMapper.xcodeproj"
+  UUID: 4F38DD1163EAAAC1A648D52404EA8805
 Pods-MomentsDemo:
   LABEL: Pods-MomentsDemo
   PROJECT_PATH: "/Users/zhangquan526/Desktop/MomentsDemo/Pods/Pods.xcodeproj"
