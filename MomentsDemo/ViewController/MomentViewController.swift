@@ -7,8 +7,8 @@
 //
 
 import UIKit
-import ESPullToRefresh
 import AlamofireImage
+import PullToRefreshKit
 
 class MomentViewController: UIViewController,UITableViewDelegate,UITableViewDataSource{
     @IBOutlet weak var nickLabel: UILabel!
@@ -23,21 +23,13 @@ class MomentViewController: UIViewController,UITableViewDelegate,UITableViewData
         super.viewDidLoad()
         self.setupSubviews();
         DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) {
-            self.tableView.es.autoPullToRefresh()
+            //auto load Data
+            self.momentViewModel.loadData ()
         }
     }
-    
+
     private func setupSubviews() {
-        let header = MomentRefreshHeaderView.init(frame: CGRect.zero)
-        let footer = ESRefreshFooterAnimator.init(frame: CGRect.zero)
-        self.tableView.es.addPullToRefresh(animator: header) { [weak self] in
-            self?.momentViewModel.loadData ()
-        }
-        self.tableView.es.addInfiniteScrolling(animator: footer) { [weak self] in
-            self?.momentViewModel.loadMore()
-        }
-        self.tableView.refreshIdentifier = "WeChat"
-        self.tableView.expiredTimeInterval = 20.0
+        // set tableview style
         self.tableView.rowHeight = UITableView.automaticDimension
         self.tableView.estimatedRowHeight = 560
         self.tableView.separatorStyle = .none
@@ -45,10 +37,19 @@ class MomentViewController: UIViewController,UITableViewDelegate,UITableViewData
         
         //remove tableview Separator line
         self.tableView.tableFooterView = UIView.init()
+        
+        //config refresh header
+        self.tableView.configRefreshHeader(container:self) { [weak self] in
+            self?.momentViewModel.loadData ()
+        }
+        
+        //refresh call back
         momentViewModel.refreshCallBack = { (userInfo:User?,tweets:[TweetItem],hasMore:Bool) in
-            self.tableView.es.stopPullToRefresh()
-            if(!hasMore){
-                self.tableView.es.noticeNoMoreData()
+            self.tableView.switchRefreshHeader(to: .normal(.success, 0.0))
+            if (hasMore) {
+                self.tableView.configRefreshFooter(container:self) { [weak self] in
+                    self?.momentViewModel.loadMore()
+                };
             }
             self.avatarImage.af_setImage(withURL: URL(string: userInfo!.avatarUrl)!)
             self.profileImage.af_setImage(withURL: URL(string: userInfo!.profileImageUrl)!)
@@ -58,15 +59,16 @@ class MomentViewController: UIViewController,UITableViewDelegate,UITableViewData
             self.tableView.reloadData()
             
         }
-        
+        //load more call back
         momentViewModel.loadMoreCallBack = { (tweets:[TweetItem],hasMore:Bool) in
-            self.tableView.es.stopLoadingMore()
-            if(!hasMore){
-                self.tableView.es.noticeNoMoreData()
+            DispatchQueue.main.asyncAfter(deadline: .now() + 1.5) {
+                self.tableView.switchRefreshFooter(to: .normal)
+                if(!hasMore){
+                    self.tableView.switchRefreshFooter(to: .removed)
+                }
+                self.tweetList.append(contentsOf: tweets)
+                self.tableView.reloadData()
             }
-            self.tweetList.append(contentsOf: tweets)
-            self.tableView.reloadData()
-            
         }
     }
 }

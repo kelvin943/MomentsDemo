@@ -7,16 +7,176 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "9D8AE9C8-C8E3-4754-B3E9-8F7380B030AC"
+            uuid = "5ABB445B-C8D1-4C33-A585-F7E577530E59"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "MomentsDemo/ViewController/MomentViewController.swift"
+            filePath = "MomentsDemo/View/MomentRefreshHeaderView.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "50"
             endingLineNumber = "50"
-            landmarkName = "setupSubviews()"
+            landmarkName = "refreshAnimationEnd(view:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "5ABB445B-C8D1-4C33-A585-F7E577530E59 - 86a46fd629347971"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MomentsDemo.MomentRefreshHeaderView.refreshAnimationEnd(view: ESPullToRefresh.ESRefreshComponent) -&gt; ()"
+                  moduleName = "MomentsDemo"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/zhangquan526/Desktop/MomentsDemo/MomentsDemo/View/MomentRefreshHeaderView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "50"
+                  endingLineNumber = "50"
+                  offsetFromSymbolStart = "116">
+               </Location>
+               <Location
+                  uuid = "5ABB445B-C8D1-4C33-A585-F7E577530E59 - 872296233c04b05f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; () in MomentsDemo.MomentRefreshHeaderView.refreshAnimationEnd(view: ESPullToRefresh.ESRefreshComponent) -&gt; ()"
+                  moduleName = "MomentsDemo"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/zhangquan526/Desktop/MomentsDemo/MomentsDemo/View/MomentRefreshHeaderView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "51"
+                  endingLineNumber = "51"
+                  offsetFromSymbolStart = "24">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "8DE18FE5-9CA1-40B2-BF4B-2823A0A2652F"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MomentsDemo/View/MomentRefreshHeaderView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "43"
+            endingLineNumber = "43"
+            landmarkName = "refreshAnimationBegin(view:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "8DE18FE5-9CA1-40B2-BF4B-2823A0A2652F - 9156af93d89eb3bb"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MomentsDemo.MomentRefreshHeaderView.refreshAnimationBegin(view: ESPullToRefresh.ESRefreshComponent) -&gt; ()"
+                  moduleName = "MomentsDemo"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/zhangquan526/Desktop/MomentsDemo/MomentsDemo/View/MomentRefreshHeaderView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "43"
+                  endingLineNumber = "43"
+                  offsetFromSymbolStart = "148">
+               </Location>
+               <Location
+                  uuid = "8DE18FE5-9CA1-40B2-BF4B-2823A0A2652F - 82a48eeceb66268c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; () in MomentsDemo.MomentRefreshHeaderView.refreshAnimationBegin(view: ESPullToRefresh.ESRefreshComponent) -&gt; ()"
+                  moduleName = "MomentsDemo"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/zhangquan526/Desktop/MomentsDemo/MomentsDemo/View/MomentRefreshHeaderView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "44"
+                  endingLineNumber = "44"
+                  offsetFromSymbolStart = "68">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "4E76D5C2-0AA2-45EA-8112-23742737037A"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MomentsDemo/View/MomentRefreshHeaderView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "66"
+            endingLineNumber = "66"
+            landmarkName = "refresh(view:progressDidChange:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "D740B5DF-781B-4C35-ACE2-7EFAC0B9D326"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MomentsDemo/View/MomentRefreshHeaderView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "65"
+            endingLineNumber = "65"
+            landmarkName = "refresh(view:progressDidChange:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "EF6658DA-05B1-4584-952D-C41058E23A33"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Pods/ESPullToRefresh/Sources/ESPullToRefresh.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "305"
+            endingLineNumber = "305"
+            landmarkName = "start()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "E56AED80-FCD7-48BF-BCB5-A5A0D1C1FC83"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Pods/ESPullToRefresh/Sources/ESPullToRefresh.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "86"
+            endingLineNumber = "86"
+            landmarkName = "addInfiniteScrolling(animator:handler:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "80ACAD1C-1B95-4960-829A-3BDA465C09BF"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Pods/ESPullToRefresh/Sources/ESPullToRefresh.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "75"
+            endingLineNumber = "75"
+            landmarkName = "addInfiniteScrolling(handler:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

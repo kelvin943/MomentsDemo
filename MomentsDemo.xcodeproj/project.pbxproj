@@ -17,7 +17,6 @@
 		89BE4F87238041BA00976C4B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 89BE4F85238041BA00976C4B /* LaunchScreen.storyboard */; };
 		89FBDC0E2380F10E000859F3 /* BaseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89FBDC0D2380F10E000859F3 /* BaseModel.swift */; };
 		89FBDC142380F136000859F3 /* MomentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89FBDC122380F136000859F3 /* MomentViewController.swift */; };
-		89FBDC2E23811615000859F3 /* MomentRefreshHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89FBDC2D23811615000859F3 /* MomentRefreshHeaderView.swift */; };
 		C1417D3B0938EA3D26A9F9BB /* Pods_MomentsDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17C39F810A2F663165440BB6 /* Pods_MomentsDemo.framework */; };
 /* End PBXBuildFile section */
 
@@ -36,7 +35,6 @@
 		89BE4F88238041BA00976C4B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		89FBDC0D2380F10E000859F3 /* BaseModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseModel.swift; sourceTree = "<group>"; };
 		89FBDC122380F136000859F3 /* MomentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MomentViewController.swift; sourceTree = "<group>"; };
-		89FBDC2D23811615000859F3 /* MomentRefreshHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MomentRefreshHeaderView.swift; sourceTree = "<group>"; };
 		ADA0362764FA7582F1D4DE5D /* Pods-MomentsDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MomentsDemo.release.xcconfig"; path = "Target Support Files/Pods-MomentsDemo/Pods-MomentsDemo.release.xcconfig"; sourceTree = "<group>"; };
 		DD307318CCD035A2062C3E91 /* Pods-MomentsDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MomentsDemo.debug.xcconfig"; path = "Target Support Files/Pods-MomentsDemo/Pods-MomentsDemo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -109,7 +107,6 @@
 		89FBDC0F2380F136000859F3 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				89FBDC2D23811615000859F3 /* MomentRefreshHeaderView.swift */,
 				89A58FAF2382992B00F20AD5 /* MomentCell.swift */,
 			);
 			path = View;
@@ -256,7 +253,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				89FBDC2E23811615000859F3 /* MomentRefreshHeaderView.swift in Sources */,
 				89FBDC142380F136000859F3 /* MomentViewController.swift in Sources */,
 				89BE4F7B238041B900976C4B /* AppDelegate.swift in Sources */,
 				89A58FB02382992B00F20AD5 /* MomentCell.swift in Sources */,

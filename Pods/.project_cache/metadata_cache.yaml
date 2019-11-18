@@ -10,6 +10,10 @@ ESPullToRefresh:
   LABEL: ESPullToRefresh
   PROJECT_PATH: "/Users/zhangquan526/Desktop/MomentsDemo/Pods/ESPullToRefresh.xcodeproj"
   UUID: 5D435984EFD7B8B8B93B98F8B45D5F3B
+MJRefresh:
+  LABEL: MJRefresh
+  PROJECT_PATH: "/Users/zhangquan526/Desktop/MomentsDemo/Pods/MJRefresh.xcodeproj"
+  UUID: E94AEF767442EDAAAAB2129CDFA2C2ED
 ObjectMapper:
   LABEL: ObjectMapper
   PROJECT_PATH: "/Users/zhangquan526/Desktop/MomentsDemo/Pods/ObjectMapper.xcodeproj"
@@ -22,6 +26,10 @@ PromiseKit:
   LABEL: PromiseKit
   PROJECT_PATH: "/Users/zhangquan526/Desktop/MomentsDemo/Pods/PromiseKit.xcodeproj"
   UUID: 128C731E310A7738D156105948622A8D
+PullToRefreshKit:
+  LABEL: PullToRefreshKit
+  PROJECT_PATH: "/Users/zhangquan526/Desktop/MomentsDemo/Pods/PullToRefreshKit.xcodeproj"
+  UUID: 2905318C45022EB45FEDDADCC4746694
 RxSwift:
   LABEL: RxSwift
   PROJECT_PATH: "/Users/zhangquan526/Desktop/MomentsDemo/Pods/RxSwift.xcodeproj"
