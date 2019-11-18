@@ -2,7 +2,7 @@
 //  MomentCell.swift
 //  MomentsDemo
 //
-//  Created by 张泉(平安好房技术中心智慧城市房产云研发团队前端研发组) on 2019/11/18.
+//  Created by Macro on 2019/11/18.
 //  Copyright © 2019 macro. All rights reserved.
 //
 
@@ -121,6 +121,7 @@ extension MomentCell {
 extension MomentCell {
     @IBAction func moreClick(_ sender: Any) {
     }
+    
     @objc func viewTheBigImage(ges:UITapGestureRecognizer) {
     }
     

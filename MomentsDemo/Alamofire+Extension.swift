@@ -2,7 +2,7 @@
 //  Alamofire+Extension.swift
 //  MomentsDemo
 //
-//  Created by 张泉(平安好房技术中心智慧城市房产云研发团队前端研发组) on 2019/11/17.
+//  Created by Macro on 2019/11/17.
 //  Copyright © 2019 macro. All rights reserved.
 //
 
@@ -130,8 +130,6 @@ extension DataRequest {
                 if statusCode == 403 {
                     //                User.Logout();
                 }
-                
-                
                 let jsonResponseSerializer = DataRequest.jsonResponseSerializer(options: .allowFragments)
                 let result = jsonResponseSerializer.serializeResponse(request, response, data, nil)
                 
