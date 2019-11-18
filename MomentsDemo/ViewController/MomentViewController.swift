@@ -21,19 +21,20 @@ class MomentViewController: UIViewController,UITableViewDelegate,UITableViewData
     // MARK: - UI and lift cycle
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.setupSubviews();
-        DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) {
-            //auto load Data
-            self.momentViewModel.loadData ()
-        }
+        self.setupSubviews()
+        self.loadData()
+        
     }
 
     private func setupSubviews() {
         // set tableview style
+        self.title = "朋友圈"
         self.tableView.rowHeight = UITableView.automaticDimension
         self.tableView.estimatedRowHeight = 560
         self.tableView.separatorStyle = .none
         self.tableView.separatorColor = UIColor.clear
+        
+        self.navigationController?.setNavigationBarHidden(true, animated: false)
         
         //remove tableview Separator line
         self.tableView.tableFooterView = UIView.init()
@@ -71,6 +72,13 @@ class MomentViewController: UIViewController,UITableViewDelegate,UITableViewData
             }
         }
     }
+    
+    private func loadData() {
+        DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) {
+            //auto load Data
+            self.momentViewModel.loadData ()
+        }
+    }
 }
 
 // MARK: - Table view data source
@@ -89,6 +97,16 @@ extension MomentViewController {
         return cell
     }
     
+    public func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        let offsetY = scrollView.contentOffset.y + scrollView.contentInset.top
+        if (offsetY >= 200) {
+            self.navigationController?.setNavigationBarHidden(false, animated: false)
+        }else {
+            self.navigationController?.setNavigationBarHidden(true, animated: false)
+        }
+        
+        
+    }
 }
 
 
