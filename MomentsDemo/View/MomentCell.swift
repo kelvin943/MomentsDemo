@@ -24,6 +24,7 @@ class MomentCell: UITableViewCell {
     @IBOutlet weak var nickNameLabel: UILabel!
     @IBOutlet weak var contentLabel: UILabel!
     @IBOutlet weak var images: UIView!
+    @IBOutlet weak var commentsLabel: UILabel!
     @IBOutlet weak var imageHeightConstraint: NSLayoutConstraint!
     @IBOutlet weak var imageHeightConstraint1: NSLayoutConstraint!
     @IBOutlet weak var imageHeightConstraint2: NSLayoutConstraint!
@@ -51,6 +52,7 @@ extension MomentCell {
         self.nickNameLabel.text = model.sender?.nickName
         self.contentLabel.text = model.content
         setImagesUI(arr: model.images ?? [])
+        setCommentsUI(arr:model.comments ?? [])
         
     }
     func setImagesUI(arr:[Dictionary<String,String>]) {
@@ -87,6 +89,32 @@ extension MomentCell {
             imageV.addGestureRecognizer(singleTap)
         }
     }
+    
+    func setCommentsUI(arr:[CommentsItem]) {
+        if (arr.count == 0) {
+            commentsLabel.snp.updateConstraints { (ls) in
+                ls.height.equalTo(0)
+            }
+            return
+        }
+        
+        var commentStr:String = ""
+        for index in 0...arr.count - 1{
+            let content = arr[index].content ?? ""
+            if (index == arr.count - 1){
+                commentStr.append(arr[index].sender.nickName + ": " + content)
+            }else {
+                commentStr.append(arr[index].sender.nickName + ": " + content + "\r" )
+            }
+        }
+        let commentHeight = self.getTextHeight(textStr: commentStr, font: UIFont.systemFont(ofSize: 15), width: commentsLabel.frame.width)
+        commentsLabel.snp.updateConstraints { (ls) in
+            ls.height.equalTo(commentHeight)
+        }
+        commentsLabel.text = commentStr
+        
+        
+    }
 }
 
 //MARK: - click event
@@ -96,5 +124,13 @@ extension MomentCell {
     @objc func viewTheBigImage(ges:UITapGestureRecognizer) {
     }
     
+    func getTextHeight(textStr :String, font :UIFont, width :CGFloat)  -> CGFloat{
+        let normalText : NSString = textStr as NSString
+        let size = CGSize(width: width, height:1000)
+        let dic = NSDictionary(object: font, forKey : kCTFontAttributeName as! NSCopying)
+        let stringSize = normalText.boundingRect(with: size, options: .usesLineFragmentOrigin, attributes: dic as? [NSAttributedString.Key:Any], context:nil).size
+        return stringSize.height
+    }
 }
+
 

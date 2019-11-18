@@ -71,7 +71,6 @@ class CommentsItem: BaseModel,Mappable {
         content <- map["content"]
         sender <- map["sender"]
     }
-    
 }
 
 class TweetItem: BaseModel,Mappable{

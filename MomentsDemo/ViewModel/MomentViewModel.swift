@@ -8,8 +8,9 @@
 
 import UIKit
 
+
+//MARK: - propertys
 class MomentViewModel: NSObject {
-    
     public var array = [String]()
     lazy var tweetList   : [TweetItem] = [TweetItem]()
     var page             : Int = 1
@@ -18,6 +19,8 @@ class MomentViewModel: NSObject {
     var loadMoreCallBack : (([TweetItem],Bool) -> (Void))?
 }
 
+
+//MARK: - public load data events
 extension MomentViewModel {
     func loadData(){
         let dispatchGroup = DispatchGroup()
