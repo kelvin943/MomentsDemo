@@ -25,7 +25,7 @@ class MomentRefreshHeaderView: UIView ,ESRefreshProtocol, ESRefreshAnimatorProto
         imageView.image = UIImage.init(named: "wx_refresh_icon")
         imageView.sizeToFit()
         let size = imageView.image?.size ?? CGSize.zero
-        imageView.center = CGPoint.init(x:40, y: -(size.height + 50))
+        imageView.center = CGPoint.init(x:40, y: -size.height)
         return imageView
     }()
     
@@ -42,19 +42,19 @@ class MomentRefreshHeaderView: UIView ,ESRefreshProtocol, ESRefreshAnimatorProto
         self.startAnimating()
         UIView.animate(withDuration: 0.2, delay: 0, options: .curveLinear, animations: {
             let size = self.imageView.image?.size ?? CGSize.zero
-            self.imageView.center = CGPoint.init(x: 40, y: 50 + size.height / 2.0)
+            self.imageView.center = CGPoint.init(x: 40, y: 16.0 + size.height / 2.0)
             }, completion: { (finished) in })
     }
     
     public func refreshAnimationEnd(view: ESRefreshComponent) {
         UIView.animate(withDuration: 0.1, delay: 0, options: .curveEaseIn, animations: {
             self.imageView.transform = CGAffineTransform.identity
-            self.imageView.center = CGPoint.init(x: 40, y: 66)
+            self.imageView.center = CGPoint.init(x: 40, y: self.imageView.center.y + 10.0)
         }, completion: { (finished) in
             UIView.animate(withDuration: 0.2, delay: 0, options: .curveEaseOut, animations: {
                 let size = self.imageView.image?.size ?? CGSize.zero
                 self.imageView.transform = CGAffineTransform.identity
-                self.imageView.center = CGPoint.init(x: 40, y: -(size.height + 50))
+                self.imageView.center = CGPoint.init(x: 40, y: -size.height)
             }, completion: { (finished) in
                 self.stopAnimating()
             })
@@ -62,7 +62,6 @@ class MomentRefreshHeaderView: UIView ,ESRefreshProtocol, ESRefreshAnimatorProto
     }
     
     public func refresh(view: ESRefreshComponent, progressDidChange progress: CGFloat) {
-        print(progress)
         if (progress <= 0.79) {
             return;
         }
@@ -70,7 +69,7 @@ class MomentRefreshHeaderView: UIView ,ESRefreshProtocol, ESRefreshAnimatorProto
         let size = imageView.image?.size ?? CGSize.zero
         let p = min(1.0, max(0.0, progress))
         let y = (-self.trigger * progress) + 16.0 - (size.height + 16.0) * (1 - p)
-        let center = CGPoint.init(x: 40, y: y + 100)
+        let center = CGPoint.init(x: 40, y: y + (size.height / 2.0))
         self.imageView.center = center
         self.imageView.transform = CGAffineTransform(rotationAngle: CGFloat(Double.pi) * progress)
     }

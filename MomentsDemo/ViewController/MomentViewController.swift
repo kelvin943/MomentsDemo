@@ -10,12 +10,13 @@ import UIKit
 import ESPullToRefresh
 import AlamofireImage
 
-class MomentViewController: UIViewController {
-    
+class MomentViewController: UIViewController,UITableViewDelegate,UITableViewDataSource{
     @IBOutlet weak var nickLabel: UILabel!
     @IBOutlet weak var avatarImage: UIImageView!
     @IBOutlet weak var profileImage: UIImageView!
     @IBOutlet weak var tableView: UITableView!
+    private lazy var momentViewModel : MomentViewModel = MomentViewModel()
+    private lazy var tweetList       : [TweetItem] = [TweetItem]()
     
     // MARK: - UI and lift cycle
     override func viewDidLoad() {
@@ -26,85 +27,68 @@ class MomentViewController: UIViewController {
         }
     }
     
-    private func setupSubviews(){
+    private func setupSubviews() {
         let header = MomentRefreshHeaderView.init(frame: CGRect.zero)
         let footer = ESRefreshFooterAnimator.init(frame: CGRect.zero)
         self.tableView.es.addPullToRefresh(animator: header) { [weak self] in
-            self?.refresh()
+            self?.momentViewModel.loadData ()
         }
         self.tableView.es.addInfiniteScrolling(animator: footer) { [weak self] in
-            self?.loadMore()
+            self?.momentViewModel.loadMore()
         }
         self.tableView.refreshIdentifier = "default"
         self.tableView.expiredTimeInterval = 20.0
+        self.tableView.rowHeight = UITableView.automaticDimension
+        self.tableView.estimatedRowHeight = 560
+        self.tableView.separatorStyle = .none
+        self.tableView.separatorColor = UIColor.clear
+        
         //remove tableview Separator line
         self.tableView.tableFooterView = UIView.init()
-    }
-    
-    // MARK: - provate method
-    private func refresh() {
-        //load userinfo call back
-        User.loadUserInfo().compactMap { (userInfo) -> Void in
-            self.avatarImage.af_setImage(withURL: URL(string: userInfo.avatarUrl)!)
-            self.profileImage.af_setImage(withURL: URL(string: userInfo.profileImageUrl)!)
-            self.nickLabel.text = userInfo.nickName
-        }
-        
-        
-        
-        
-        
-        
-    
-        
-        
-//        User.loadUserInfo().then(on: DispatchQueue.main, flags: DispatchWorkItemFlags?) { (User) -> Thenable in
-//            
-//            self.tableView.reloadData()
-//            self.tableView.es.stopPullToRefresh()
-//            
-//            
-//        }
-//        
-//        
-//        DispatchQueue.main.asyncAfter(deadline: .now() + 3.0) {
-//           //模拟网络请求返回
-//            self.tableView.reloadData()
-//            self.tableView.es.stopPullToRefresh()
-//        }
-        
-    }
-    private func loadMore() {
-        
-        DispatchQueue.main.asyncAfter(deadline: .now() + 3.0) {
+        momentViewModel.refreshCallBack = { (userInfo:User?,tweets:[TweetItem],hasMore:Bool) in
+            self.tableView.es.stopPullToRefresh()
+            if(!hasMore){
+                self.tableView.es.noticeNoMoreData()
+            }
+            self.avatarImage.af_setImage(withURL: URL(string: userInfo!.avatarUrl)!)
+            self.profileImage.af_setImage(withURL: URL(string: userInfo!.profileImageUrl)!)
+            self.nickLabel.text = userInfo!.nickName
+            self.tweetList.removeAll()
+            self.tweetList.append(contentsOf: tweets)
+            self.tableView.reloadData()
             
-            self.tableView.es.stopLoadingMore()
-//            self.page += 1
-//            if self.page <= 3 {
-//                for num in 1...8{
-//                    if num % 2 == 0 && arc4random() % 4 == 0 {
-//                        self.array.append("info")
-//                    } else {
-//                        self.array.append("photo")
-//                    }
-//                }
-//                self.tableView.reloadData()
-//                self.tableView.es.stopLoadingMore()
-//            } else {
-//                self.tableView.es.noticeNoMoreData()
-//            }
         }
-       
+        
+        momentViewModel.loadMoreCallBack = { (tweets:[TweetItem],hasMore:Bool) in
+            self.tableView.es.stopLoadingMore()
+            if(!hasMore){
+                self.tableView.es.noticeNoMoreData()
+            }
+            self.tweetList.append(contentsOf: tweets)
+            self.tableView.reloadData()
+            
+        }
     }
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }
+
+// MARK: - Table view data source
+extension MomentViewController {
+    
+    public func numberOfSections(in tableView: UITableView) -> Int {
+        return 1
+    }
+
+    public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return tweetList.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        var cell: UITableViewCell!
+        cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath as IndexPath)
+        cell.textLabel?.text = "第\(indexPath.row)行"
+        return cell
+    }
+    
+}
+
+

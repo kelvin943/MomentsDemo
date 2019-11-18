@@ -118,7 +118,7 @@ extension DataRequest {
                 //return ["*/*"]
             }
             
-            return validate(contentType: acceptableContentTypes).validate { [unowned self] request, response, data in
+            return validate(contentType: acceptableContentTypes).validate { request, response, data in
                 
                 let statusCode = response.statusCode
                 
