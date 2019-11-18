@@ -11,6 +11,7 @@
 		89A58F6523813A7C00F20AD5 /* Alamofire+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89A58F6423813A7C00F20AD5 /* Alamofire+Extension.swift */; };
 		89A58F7E2381489D00F20AD5 /* MomentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89A58F7D2381489D00F20AD5 /* MomentViewModel.swift */; };
 		89A58FB02382992B00F20AD5 /* MomentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89A58FAF2382992B00F20AD5 /* MomentCell.swift */; };
+		89A590282382C2B700F20AD5 /* MomentImageBrower.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89A590272382C2B700F20AD5 /* MomentImageBrower.swift */; };
 		89BE4F7B238041B900976C4B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89BE4F7A238041B900976C4B /* AppDelegate.swift */; };
 		89BE4F82238041B900976C4B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 89BE4F80238041B900976C4B /* Main.storyboard */; };
 		89BE4F84238041BA00976C4B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 89BE4F83238041BA00976C4B /* Assets.xcassets */; };
@@ -27,6 +28,7 @@
 		89A58F6623813EDF00F20AD5 /* MomentsDemo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MomentsDemo-Bridging-Header.h"; sourceTree = "<group>"; };
 		89A58F7D2381489D00F20AD5 /* MomentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MomentViewModel.swift; sourceTree = "<group>"; };
 		89A58FAF2382992B00F20AD5 /* MomentCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MomentCell.swift; sourceTree = "<group>"; };
+		89A590272382C2B700F20AD5 /* MomentImageBrower.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MomentImageBrower.swift; sourceTree = "<group>"; };
 		89BE4F77238041B900976C4B /* MomentsDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MomentsDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		89BE4F7A238041B900976C4B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		89BE4F81238041B900976C4B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -108,6 +110,7 @@
 			isa = PBXGroup;
 			children = (
 				89A58FAF2382992B00F20AD5 /* MomentCell.swift */,
+				89A590272382C2B700F20AD5 /* MomentImageBrower.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -259,6 +262,7 @@
 				89A58F552381277500F20AD5 /* MomentModel.swift in Sources */,
 				89A58F6523813A7C00F20AD5 /* Alamofire+Extension.swift in Sources */,
 				89FBDC0E2380F10E000859F3 /* BaseModel.swift in Sources */,
+				89A590282382C2B700F20AD5 /* MomentImageBrower.swift in Sources */,
 				89A58F7E2381489D00F20AD5 /* MomentViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

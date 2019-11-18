@@ -14,6 +14,13 @@ CACHE_KEYS:
     CHECKSUM: be9963c6582d68b39e89191f64c82a7d7bf40fdd
     SPECS:
       - AlamofireImage (3.6.0)
+  Kingfisher:
+    BUILD_SETTINGS_CHECKSUM:
+      Kingfisher: fbcadf159c61eccc29511fea23f3d76d
+    CHECKSUM: 0bf6eae7c2193f15719915fecb7c2c1c03855f3d
+    SPECS:
+      - Kingfisher (5.10.0)
+      - Kingfisher/Core (5.10.0)
   ObjectMapper:
     BUILD_SETTINGS_CHECKSUM:
       ObjectMapper: 21eea98855f08976126cfa955749b7fd
@@ -22,8 +29,8 @@ CACHE_KEYS:
       - ObjectMapper (3.5.1)
   Pods-MomentsDemo:
     BUILD_SETTINGS_CHECKSUM:
-      Debug: 73d1efff7631e4b8298d5acf03ff04f6
-      Release: 73d1efff7631e4b8298d5acf03ff04f6
+      Debug: 0fb765efe7a81ef81087c51ce0f53dda
+      Release: 0fb765efe7a81ef81087c51ce0f53dda
   PromiseKit:
     BUILD_SETTINGS_CHECKSUM:
       PromiseKit: af7ccfc2ad4d81d380c03fc732c4dbf3

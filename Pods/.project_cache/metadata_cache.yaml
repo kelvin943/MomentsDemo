@@ -10,6 +10,10 @@ ESPullToRefresh:
   LABEL: ESPullToRefresh
   PROJECT_PATH: "/Users/zhangquan526/Desktop/MomentsDemo/Pods/ESPullToRefresh.xcodeproj"
   UUID: 5D435984EFD7B8B8B93B98F8B45D5F3B
+Kingfisher:
+  LABEL: Kingfisher
+  PROJECT_PATH: "/Users/zhangquan526/Desktop/MomentsDemo/Pods/Kingfisher.xcodeproj"
+  UUID: 05BB3BFEAA03766641420DCD88978468
 MJRefresh:
   LABEL: MJRefresh
   PROJECT_PATH: "/Users/zhangquan526/Desktop/MomentsDemo/Pods/MJRefresh.xcodeproj"

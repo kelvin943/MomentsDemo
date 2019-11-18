@@ -17,6 +17,7 @@ target 'MomentsDemo' do
   pod 'PromiseKit'
   pod 'ObjectMapper'
   pod "PullToRefreshKit"
+  pod 'Kingfisher'
 # Pods for MomentsDemo
 
 end

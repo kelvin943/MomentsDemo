@@ -81,7 +81,7 @@ class MomentViewController: UIViewController,UITableViewDelegate,UITableViewData
     }
 }
 
-// MARK: - Table view data source
+// MARK: - Table view data source and  scrollview delegate
 extension MomentViewController {
     public func numberOfSections(in tableView: UITableView) -> Int {
         return 1
@@ -96,6 +96,9 @@ extension MomentViewController {
         cell.setCellModel(model: tweetList[indexPath.row])
         return cell
     }
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+         self.view.endEditing(true)
+    }
     
     public func scrollViewDidScroll(_ scrollView: UIScrollView) {
         let offsetY = scrollView.contentOffset.y + scrollView.contentInset.top
@@ -104,8 +107,6 @@ extension MomentViewController {
         }else {
             self.navigationController?.setNavigationBarHidden(true, animated: false)
         }
-        
-        
     }
 }
 
