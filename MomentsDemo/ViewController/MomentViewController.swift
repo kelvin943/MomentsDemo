@@ -36,7 +36,7 @@ class MomentViewController: UIViewController,UITableViewDelegate,UITableViewData
         self.tableView.es.addInfiniteScrolling(animator: footer) { [weak self] in
             self?.momentViewModel.loadMore()
         }
-        self.tableView.refreshIdentifier = "default"
+        self.tableView.refreshIdentifier = "WeChat"
         self.tableView.expiredTimeInterval = 20.0
         self.tableView.rowHeight = UITableView.automaticDimension
         self.tableView.estimatedRowHeight = 560
@@ -73,19 +73,17 @@ class MomentViewController: UIViewController,UITableViewDelegate,UITableViewData
 
 // MARK: - Table view data source
 extension MomentViewController {
-    
     public func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
-
     public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return tweetList.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        var cell: UITableViewCell!
-        cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath as IndexPath)
-        cell.textLabel?.text = "第\(indexPath.row)行"
+        var cell: MomentCell!
+        cell = tableView.dequeueReusableCell(withIdentifier: "MomentCell", for: indexPath as IndexPath) as? MomentCell
+        cell.setCellModel(model: tweetList[indexPath.row])
         return cell
     }
     

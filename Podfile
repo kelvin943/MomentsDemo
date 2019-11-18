@@ -16,6 +16,7 @@ target 'MomentsDemo' do
   pod 'RxSwift'
   pod 'PromiseKit'
   pod 'ObjectMapper'
+  pod 'MJRefresh'
   pod "ESPullToRefresh"
 # Pods for MomentsDemo
 

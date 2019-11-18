@@ -35,7 +35,12 @@ extension MomentViewModel {
         //request tweetslist data
         dispatchGroup.enter()
         User.loadTweetList().compactMap { (tweetList) -> Void in
-            self.tweetList = tweetList
+            
+            
+            
+            self.tweetList = tweetList.filter({ (item) -> Bool in
+                return item.sender != nil
+            })
             dispatchGroup.leave()
             print("request tweets list data finish:\(tweetList)")
         }.catch { (error) in

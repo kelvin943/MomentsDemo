@@ -15,7 +15,7 @@ class User: BaseModel,Mappable{
     var userName : String = ""
     var nickName : String = ""
     var profileImageUrl : String!
-    var avatarUrl  : String!
+    var avatarUrl  : String = "https://thoughtworks-mobile-2018.herokuapp.com/images/user/avatar.png"
     
     required init?(map: Map) {
         
@@ -75,7 +75,7 @@ class CommentsItem: BaseModel,Mappable {
 }
 
 class TweetItem: BaseModel,Mappable{
-    var sender   : User!
+    var sender   : User?
     var content  : String?
     var images   : [Dictionary<String,String>]?
     var comments : [CommentsItem]?
