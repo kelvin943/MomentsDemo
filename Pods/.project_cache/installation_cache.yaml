@@ -14,13 +14,6 @@ CACHE_KEYS:
     CHECKSUM: be9963c6582d68b39e89191f64c82a7d7bf40fdd
     SPECS:
       - AlamofireImage (3.6.0)
-  Kingfisher:
-    BUILD_SETTINGS_CHECKSUM:
-      Kingfisher: fbcadf159c61eccc29511fea23f3d76d
-    CHECKSUM: 0bf6eae7c2193f15719915fecb7c2c1c03855f3d
-    SPECS:
-      - Kingfisher (5.10.0)
-      - Kingfisher/Core (5.10.0)
   ObjectMapper:
     BUILD_SETTINGS_CHECKSUM:
       ObjectMapper: 21eea98855f08976126cfa955749b7fd
@@ -29,8 +22,8 @@ CACHE_KEYS:
       - ObjectMapper (3.5.1)
   Pods-MomentsDemo:
     BUILD_SETTINGS_CHECKSUM:
-      Debug: 0fb765efe7a81ef81087c51ce0f53dda
-      Release: 0fb765efe7a81ef81087c51ce0f53dda
+      Debug: 6c70f6e9c1f89c4b72338348fc987907
+      Release: 6c70f6e9c1f89c4b72338348fc987907
   PromiseKit:
     BUILD_SETTINGS_CHECKSUM:
       PromiseKit: af7ccfc2ad4d81d380c03fc732c4dbf3
@@ -46,12 +39,6 @@ CACHE_KEYS:
     CHECKSUM: 7cc53e720e69f135cffa1a57784dfb534f0222ab
     SPECS:
       - PullToRefreshKit (0.8.8)
-  RxSwift:
-    BUILD_SETTINGS_CHECKSUM:
-      RxSwift: 6f93ba9ad32447f1cf99440145a7ce8e
-    CHECKSUM: e2dc62b366a3adf6a0be44ba9f405efd4c94e0c4
-    SPECS:
-      - RxSwift (5.0.1)
   SnapKit:
     BUILD_SETTINGS_CHECKSUM:
       SnapKit: f5f0fd32b0bbd5c4d1059d5c95a7c3d9

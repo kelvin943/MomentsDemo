@@ -13,11 +13,11 @@ target 'MomentsDemo' do
   pod 'Alamofire'
   pod 'AlamofireImage'
   pod 'SnapKit'
-  pod 'RxSwift'
   pod 'PromiseKit'
   pod 'ObjectMapper'
   pod "PullToRefreshKit"
-  pod 'Kingfisher'
+#  pod 'Kingfisher'
+#  pod 'RxSwift'
 # Pods for MomentsDemo
 
 end
